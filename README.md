@@ -1,5 +1,9 @@
 # Platform Pulse
 
+![Python 3.12](https://img.shields.io/badge/python-3.12-blue)
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
+![Platform: Windows](https://img.shields.io/badge/platform-Windows-lightgrey)
+
 Live NYC subway tracking for one small corner of the Upper West Side — the **B**, **C**, and **D** trains at **Cathedral Pkwy (110 St)**, and the **1** train at **103 St**. Straight from the MTA's real-time feeds, no API key required.
 
 Two ways to view it:
@@ -75,3 +79,7 @@ train_widget.py   # desktop widget (PySide6), reuses train_board's data engine
 requirements.txt
 .env.example       # template for an Anthropic API key, if needed later
 ```
+
+## License
+
+[MIT](LICENSE)
