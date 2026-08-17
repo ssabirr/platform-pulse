@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A0B0D">
+<title>Platform Pulse</title>
+<meta name="description" content="Live subway arrivals for the B, C and D at Cathedral Pkwy (110 St) and the 1 at 103 St.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="frame">
+
+  <header class="masthead">
+    <div class="wordmark">
+      <span class="beacon" aria-hidden="true"></span>
+      <span class="wordmark-text">Platform<em>Pulse</em></span>
+    </div>
+    <div class="status">
+      <span class="status-label" id="status-label">Connecting</span>
+      <time class="clock" id="clock" datetime="">--:--:--</time>
+    </div>
+  </header>
+
+  <section class="hero" id="hero" aria-labelledby="hero-eyebrow">
+    <p class="eyebrow" id="hero-eyebrow">Next train</p>
+    <div class="hero-body" id="hero-body">
+      <div class="hero-skeleton">Reading the feeds&hellip;</div>
+    </div>
+  </section>
+
+  <main id="stations" class="stations"></main>
+
+  <p class="notice" id="notice" hidden></p>
+
+  <footer class="colophon">
+    <span>Live from the MTA GTFS&#8209;realtime feeds</span>
+    <span class="dot" aria-hidden="true">&middot;</span>
+    <span>Refreshes every <span id="refresh-note">30</span>s</span>
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
